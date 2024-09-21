@@ -1,4 +1,4 @@
-import { ITransaction, CategoryMapping } from "../domain/models/transactions";
+import { ITransaction, CategoryMapping } from '../domain/models/transactions';
 
 export interface BaseRepository<T> {
   save(entity: T): Promise<void>;

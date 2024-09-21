@@ -7,6 +7,5 @@ export interface ITransaction {
   accountNumber: string;
   category: string;
 }
-  
-export type CategoryMapping = Pick<ITransaction, "category" | "description">;
-  
+
+export type CategoryMapping = Pick<ITransaction, 'category' | 'description'>;

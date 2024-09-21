@@ -4,10 +4,11 @@
     "description": "Basic setup",
     "main": "index.js",
     "scripts": {
-        "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-        "start": "npm run build && NODE_ENV=production node ./dist/src/index.js",
-        "build": "tsc",
-        "test": "set DEBUG=* && jest --verbose"
+      "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+      "start": "npm run build && NODE_ENV=production node ./dist/index.js",
+      "build": "tsc",
+      "test": "set DEBUG=* && jest --verbose",
+      "format": "npx prettier --write src/"
     },
     "author": "Mohamed Dounnani",
     "license": "MIT",
