@@ -119,7 +119,9 @@ npm run test
 ## Time constraint future Improvements
 1. Implement user authentication and authorization.
 2. Add user entity and assign each transaction the user ID.
-4. Implement batch processing for large CSV files. I would save in batches the file in a datawarehouse and process it asyncronously.
-5. Add more error handling and logging.
-6. Implement redis caching to reduce API calls and improve performance. The mongo cache was done for simplicity
-7. Retrieve the API Key from a secret manager
+3. Implement batch processing for large CSV files. I would save in batches the file in a datawarehouse and process it asyncronously.
+4. Add more error handling and logging.
+5. Implement redis caching to reduce API calls and improve performance. The mongo cache was done for simplicity
+6. Retrieve the API Key from a secret manager
+7. Persistent Database: The database currently resets with each build.
+8. For a more general approach, I would use a vector database as a caching strategy to identify similar descriptions.
