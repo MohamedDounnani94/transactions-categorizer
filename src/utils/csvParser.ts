@@ -14,7 +14,7 @@ export const parseCSV = (buffer: Buffer): Promise<ITransaction[]> => {
         const transaction: ITransaction = {
           transactionId: row['Transaction ID'],
           amount: parseFloat(row['Amount']) || 0,
-          timestamp: (row['Timestamp']),
+          timestamp: new Date(row['Timestamp']),
           description: row['Description'],
           transactionType: row['Transaction Type'],
           accountNumber: row['Account Number'],
