@@ -14,8 +14,8 @@ This service allows customers to manage their transactions through the following
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone git@github.com:MohamedDounnani94/transactions-categorizer.git
+   cd transactions-categorizer
    ```
 
 3. **Set up environment variables**

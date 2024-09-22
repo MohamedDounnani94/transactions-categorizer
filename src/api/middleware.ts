@@ -23,7 +23,7 @@ const transactionSchema = Joi.object({
     'any.required': 'Transaction Type is required',
   }),
   accountNumber: Joi.string().required().messages({
-    'string.min': 'Account Number must be at least 8 characters',
+    'string.min': 'Account Number is required',
     'any.required': 'Account Number is required',
   }),
 });
